@@ -48,7 +48,6 @@ namespace AvoidRevolution.Utility.Game.Manager
 		/// </summary>
 		private GameManager()
 		{
-			
 		}
 
 		/// <summary>
