@@ -27,7 +27,12 @@ namespace AvoidRevolution.Utility.Game.Manager
 		/// </summary>
 		private int score;
 
-		int Score{
+		/// <summary>
+		/// スコアのアクセサ
+		/// </summary>
+		/// <value>スコア</value>
+		int Score
+		{
 			set
 			{
 				score = value;

@@ -3,7 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace AvoidRevolution.Utility.Game.Character
+namespace AvoidRevolution.Utility.Game.Settings
 {
 	/// <summary>
 	/// キャラ設定の構造体

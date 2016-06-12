@@ -12,8 +12,8 @@ namespace AvoidRevolution.Utility.Game.Manager
 	[Serializable]
 	public struct SKILL_SETTING
 	{
-		// 検索・設定用のスキルID(英字)
-		public string idName;
+		// 検索・設定用のスキルID
+		public int skillId;
 
 		// 表示用のスキル名
 		public string name;
@@ -23,6 +23,11 @@ namespace AvoidRevolution.Utility.Game.Manager
 
 		// スキルオブジェクト
 		public GameObject SkillObject;
+	}
+
+	enum SKILL_ID_NAME
+	{
+		TRANSPARENT = 0
 	}
 
 	/// <summary>
@@ -40,7 +45,25 @@ namespace AvoidRevolution.Utility.Game.Manager
 
 		#endregion
 
-		#region メソッド
+		#region アクセスメソッド
+
+		public void ExecuteSkillEvent(int skillId)
+		{
+			switch (skillId)
+			{
+			case (int)SKILL_ID_NAME.TRANSPARENT:
+				// 透明化
+
+				break;
+			default:
+				// 設定なし
+				break;
+			}
+		}
+
+		#endregion
+
+		#region スキルメソッド
 
 		#endregion
 	}
